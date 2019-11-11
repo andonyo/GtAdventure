@@ -1,0 +1,55 @@
+<ion-header>
+</ion-header>
+
+<div id="modal" (click)="hideModal()" class="modal_trofeo">
+  <div class="modalInterno">
+    <div class="mTrofeo">
+        <img src="{{imagen}}" alt="">
+    </div>
+    <div class="mTitulo">
+      <h3>{{descrip}}</h3>
+      <p>Fecha: {{fecha}}</p>
+      <p>Tiempo: {{tiempo}}</p>
+    </div>
+  </div>
+</div>
+
+<ion-content>
+  <div id="blur" class="todo_trofeos">
+    <div class="titulo">
+      <img src="/assets/img/trofeosTxt.png" alt="">
+    </div>
+    <div class="content_trofeos">
+      <div class="caja_trofeos" *ngFor="let item of datos">
+        <img class="trofeo" (click)="showModal(item)" src="{{item.imagen}}" alt="">
+      </div>
+      <div class="caja_trofeos" *ngIf="trof < 1">
+        <img class="trofeo" src="" alt="">
+      </div>
+      <div class="caja_trofeos" *ngIf="trof < 2">
+        <img class="trofeo" src="" alt="">
+      </div>
+      <div class="caja_trofeos" *ngIf="trof < 3">
+        <img class="trofeo" src="" alt="">
+      </div>
+      <div class="caja_trofeos" *ngIf="trof < 4">
+        <img class="trofeo" src="" alt="">
+      </div>
+      <div class="caja_trofeos" *ngIf="trof < 5">
+        <img class="trofeo" src="" alt="">
+      </div>
+      <div class="caja_trofeos" *ngIf="trof < 6">
+        <img class="trofeo" src="" alt="">
+      </div>
+      <div class="caja_trofeos" *ngIf="trof < 7">
+        <img class="trofeo" src="" alt="">
+      </div>
+      <div class="caja_trofeos" *ngIf="trof < 8">
+        <img class="trofeo" src="" alt="">
+      </div>
+      <div class="caja_trofeos" *ngIf="ok == 1">
+        <img class="trofeo" src="" alt="">
+      </div>
+    </div>
+  </div>
+</ion-content>

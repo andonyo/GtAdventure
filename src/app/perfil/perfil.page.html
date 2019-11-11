@@ -1,0 +1,40 @@
+<ion-header>
+  <div class="headerPerfil">
+    <ion-title>Perfil</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="exit"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="perfilAll">
+    <div class="imgPerfil">
+      <img class="imgPer" src="{{imagen}}" alt="">
+      <ion-icon class="edit" (click)="editar()" name="create"></ion-icon>
+      <h3>{{name}}</h3>
+      <p>{{correo}}</p>
+    </div>
+    <div class="txtPerfil">
+      <div>
+        <p>{{trofeos}}</p>
+        <p>Trofeos</p>
+      </div>
+      <div>
+        <p>{{trofeos}}</p>
+        <p>Recorridos</p>
+      </div>
+      <div>
+        <p>{{puntos}}</p>
+        <p>Puntos</p>
+      </div>
+      <img class="nubes a" src="/assets/img/n1.png" alt="">
+      <img class="nubes b" src="/assets/img/n2.png" alt="">
+    </div>
+    <div class="foot">
+      <img src="/assets/img/montains.png" alt="">
+    </div>
+  </div>
+</ion-content>

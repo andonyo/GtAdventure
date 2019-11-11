@@ -1,0 +1,360 @@
+<ion-header>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</ion-header>
+
+<ion-content>
+
+<div class="todo_inicio">
+<div class="info_user">
+  <h1>Hola, {{name}}</h1>
+  <img id="imagen" src="{{imagen}}" alt="" width="50px">
+</div>
+<div class="pregunta">
+  <div class="tuqui">
+    <img class="tk" src="/assets/img/montain.png" alt="" width="250px">
+    <img class="monta" src="/assets/img/montains.png" alt="" width="100%">
+    <div class="glovo">
+      <p>¿que tipo de lugar estas buscando hoy?</p>
+    </div>
+  </div>
+  <div class="verde">
+    <div class="tipo_lugar">
+      <div class="contl" (click)="showPlaces('montanas')">
+        <img src="/assets/img/monta.jpg" alt="" class="tipo_img">
+        <p>Montañas</p>
+      </div>
+      <div class="contl" (click)="showPlaces('volcanes')">
+        <img src="/assets/img/volcan.jpg" alt="" class="tipo_img">
+        <p>Volcanes</p>
+      </div>
+      <div class="contl" (click)="showPlaces('caminatas')">
+        <img src="/assets/img/caminata.jpg" alt="" class="tipo_img">
+        <p>Caminatas</p>
+      </div>
+      <div class="contl" (click)="showPlaces('cuevas')">
+        <img src="/assets/img/cueva.jpg" alt="" class="tipo_img">
+        <p>Cuevas</p>
+      </div>
+      <div class="contl" (click)="showPlaces('otros')">
+        <img src="/assets/img/otro.jpeg" alt="" class="tipo_img">
+        <p>Otros</p>
+      </div>
+      <div style="width: 10vw;"></div>
+    </div>
+    
+    <div style="display: contents;" *ngIf="mostrar == 'volcanes'">
+    <div class="text_tar">
+        <p>Volcanes:</p>
+    </div>
+    <div class="tarjetas">
+      
+      <div class="tarjeta" (click)="pr(4)">
+        <div class="tarjeta_img fuego">
+          <div class="degradado"></div>
+        </div>
+        <div class="info_tarjeta">
+          <div class="cont_stars">
+            <div class="estrellas">
+              <p>4.7</p>
+              <ion-icon class="estrella_icon" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="titulo-text">
+            <h2>Volcan de fuego</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta" (click)="pr(5)">
+        <div class="tarjeta_img acate">
+          <div class="degradado"></div>
+        </div>
+        <div class="info_tarjeta">
+          <div class="cont_stars">
+            <div class="estrellas">
+              <p>4.7</p>
+              <ion-icon class="estrella_icon" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="titulo-text">
+            <h2>Volcan de acatenango</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta" (click)="pr(6)">
+        <div class="tarjeta_img pacaya">
+          <div class="degradado"></div>
+        </div>
+        <div class="info_tarjeta">
+          <div class="cont_stars">
+            <div class="estrellas">
+              <p>4.5</p>
+              <ion-icon class="estrella_icon" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="titulo-text">
+            <h2>Volcan de pacaya</h2>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 10vw;"></div>
+    </div>
+    </div>
+
+    <div style="display: contents;" *ngIf="mostrar == 'montanas'">
+        <div class="text_tar">
+            <p>Montañas:</p>
+        </div>
+        <div class="tarjetas">
+          
+          <div class="tarjeta" (click)="pr(1)">
+            <div class="tarjeta_img filon">
+              <div class="degradado"></div>
+            </div>
+            <div class="info_tarjeta">
+              <div class="cont_stars">
+                <div class="estrellas">
+                  <p>4.1</p>
+                  <ion-icon class="estrella_icon" name="star"></ion-icon>
+                </div>
+              </div>
+              <div class="titulo-text">
+                <h2>Montaña el filon</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="tarjeta" (click)="pr(2)">
+            <div class="tarjeta_img rostrom">
+              <div class="degradado"></div>
+            </div>
+            <div class="info_tarjeta">
+              <div class="cont_stars">
+                <div class="estrellas">
+                  <p>4.5</p>
+                  <ion-icon class="estrella_icon" name="star"></ion-icon>
+                </div>
+              </div>
+              <div class="titulo-text">
+                <h2>Mirador rostro maya</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="tarjeta" (click)="pr(3)">
+            <div class="tarjeta_img mirandilla">
+              <div class="degradado"></div>
+            </div>
+            <div class="info_tarjeta">
+              <div class="cont_stars">
+                <div class="estrellas">
+                  <p>4.0</p>
+                  <ion-icon class="estrella_icon" name="star"></ion-icon>
+                </div>
+              </div>
+              <div class="titulo-text">
+                <h2>Cerro mirandilla</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div style="width: 10vw;"></div>
+        </div>
+    </div>
+
+    <div style="display: contents;" *ngIf="mostrar == 'caminatas'">
+      <div class="text_tar">
+          <p>Caminatas:</p>
+      </div>
+      <div class="tarjetas">
+        
+        <div class="tarjeta" (click)="pr(7)">
+          <div class="tarjeta_img puente">
+            <div class="degradado"></div>
+          </div>
+          <div class="info_tarjeta">
+            <div class="cont_stars">
+              <div class="estrellas">
+                <p>4.2</p>
+                <ion-icon class="estrella_icon" name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="titulo-text">
+              <h2>Puente de Ixpanpajul</h2>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 10vw;"></div>
+      </div>
+    </div>
+
+    <div style="display: contents;" *ngIf="mostrar == 'cuevas'">
+      <div class="text_tar">
+          <p>Cuevas:</p>
+      </div>
+      <div class="tarjetas">
+        
+        <div class="tarjeta" (click)="pr(8)">
+          <div class="tarjeta_img bombil">
+            <div class="degradado"></div>
+          </div>
+          <div class="info_tarjeta">
+            <div class="cont_stars">
+              <div class="estrellas">
+                <p>4.6</p>
+                <ion-icon class="estrella_icon" name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="titulo-text">
+              <h2>Cuevas de bombil pek</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="tarjeta" (click)="pr(9)">
+          <div class="tarjeta_img caxlampon">
+            <div class="degradado"></div>
+          </div>
+          <div class="info_tarjeta">
+            <div class="cont_stars">
+              <div class="estrellas">
+                <p>4.5</p>
+                <ion-icon class="estrella_icon" name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="titulo-text">
+              <h2>Cuevas de caxlampon</h2>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 10vw;"></div>
+      </div>
+    </div>
+
+    <div style="display: contents;" *ngIf="mostrar == 'otros'">
+      <div class="text_tar">
+          <p>Otros:</p>
+      </div>
+      <div class="tarjetas">
+        
+        <div class="tarjeta" (click)="pr(0)">
+          <div class="tarjeta_img rinconada">
+            <div class="degradado"></div>
+          </div>
+          <div class="info_tarjeta">
+            <div class="cont_stars">
+              <div class="estrellas">
+                <p>4.3</p>
+                <ion-icon class="estrella_icon" name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="titulo-text">
+              <h2>Catarata la rinconada</h2>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 10vw;"></div>
+      </div>
+    </div>
+
+    <div class="text_tar">
+      <p>Top 5 mas visitados:</p>
+    </div>
+    <div class="tarjetas">
+
+        <div class="tarjeta" (click)="pr(8)">
+          <div class="tarjeta_img bombil">
+            <div class="degradado"></div>
+          </div>
+          <div class="info_tarjeta">
+            <div class="cont_stars">
+              <div class="estrellas">
+                <p>4.6</p>
+                <ion-icon class="estrella_icon" name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="titulo-text">
+              <h2>Cuevas de bombil pek</h2>
+            </div>
+          </div>
+        </div>
+
+      <div class="tarjeta" (click)="pr(0)">
+        <div class="tarjeta_img rinconada">
+          <div class="degradado"></div>
+        </div>
+        <div class="info_tarjeta">
+          <div class="cont_stars">
+            <div class="estrellas">
+              <p>4.3</p>
+              <ion-icon class="estrella_icon" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="titulo-text">
+            <h2>Catarata la rinconada</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta" (click)="pr(6)">
+        <div class="tarjeta_img pacaya">
+          <div class="degradado"></div>
+        </div>
+        <div class="info_tarjeta">
+          <div class="cont_stars">
+            <div class="estrellas">
+              <p>4.5</p>
+              <ion-icon class="estrella_icon" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="titulo-text">
+            <h2>Volcan de pacaya</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta" (click)="pr(2)">
+        <div class="tarjeta_img rostrom">
+          <div class="degradado"></div>
+        </div>
+        <div class="info_tarjeta">
+          <div class="cont_stars">
+            <div class="estrellas">
+              <p>4.5</p>
+              <ion-icon class="estrella_icon" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="titulo-text">
+            <h2>Mirador rostro maya</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta" (click)="pr(7)">
+        <div class="tarjeta_img puente">
+          <div class="degradado"></div>
+        </div>
+        <div class="info_tarjeta">
+          <div class="cont_stars">
+            <div class="estrellas">
+              <p>4.2</p>
+              <ion-icon class="estrella_icon" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="titulo-text">
+            <h2>Puente de Ixpanpajul</h2>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 10vw;"></div>
+    </div>
+  </div>
+</div>
+</div>
+</ion-content>

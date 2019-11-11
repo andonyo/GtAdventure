@@ -1,0 +1,339 @@
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.datosL{
+    position: absolute;
+    background: white;
+    z-index: 5;
+    width: 90%;
+    height: 60vh;
+    margin: 5vh 5%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px grey;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.textosC{
+    height: 80%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.textosC h3{
+    text-align: center;
+}
+
+.textosC p {
+    width: 90%;
+    margin: 0 5%;
+    text-align: justify;
+    margin-bottom: 10px !important;
+}
+
+.imgC {
+    position: relative;
+    text-align: end;
+}
+
+.imgC img {
+    position: absolute;
+    left: -160px;
+    top: -60px;
+}
+
+.imgC button {
+    margin: 20px 20px 0 0;
+    padding: 15px;
+    border-radius: 20px;
+    width: 35%;
+    color: white;
+    background: darkcyan;
+    box-shadow: 0 6px 0 #014c4c;
+}
+
+.hotel-cont {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px grey;
+    padding: 10px;
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 5px;
+    text-decoration: none;
+    color: darkslategrey;
+    margin-bottom: 15px;
+}
+
+.imHot{
+    width: 40%;
+    padding-right: 2%;
+}
+
+.mostrar {
+    transform: scale(1);
+}
+
+.todo-coment {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: transparent;
+    display: none;
+    z-index: 3;
+}
+
+.most-cc {
+    display: block;
+}
+
+.coment {
+    display: flex;
+    width: 90%;
+    margin: 0 5%;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: 15px;
+}
+
+.comImg {
+    width: 30%;
+}
+
+.comImg img {
+    border-radius: 50px;
+    margin: 5px;
+    width: 50px;
+}
+
+.comTx {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.comTx p {
+    width: auto;
+}
+
+.nobor {
+    text-align: left !important;
+    margin: 0 !important;
+}
+
+.comentUser {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.comentUser input {
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.imagen {
+    width: 100%;
+    height: 40vh;
+    background-image: url("/assets/img/volcanPacaya.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pacaya {
+    background-image: url("/assets/img/places/volcanPacaya.jpg");
+}
+
+.fuego {
+    background-image: url("/assets/img/places/fuego.jpg");
+}
+
+.acate {
+    background-image: url("/assets/img/places/acatenango.jpeg");
+}
+
+.filon {
+    background-image: url("/assets/img/places/amati.jpg");
+}
+
+.rostrom {
+    background-image: url("/assets/img/places/rostro.jpg");
+}
+
+.mirandilla {
+    background-image: url("/assets/img/places/mirandilla.jpg");
+}
+
+.puente {
+    background-image: url("/assets/img/places/ixpanpajul.jpg");
+}
+
+.bombil {
+    background-image: url("/assets/img/places/bombil.png");
+}
+
+.caxlampon {
+    background-image: url("/assets/img/places/caxlampon.jpg");
+}
+
+.rinconada {
+    background-image: url("/assets/img/places/Catarata.jpg");
+}
+
+.back {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    color: white;
+    font-size: 40px;
+}
+
+.degradado {
+    background: linear-gradient(0deg, white, transparent);
+    width: 100%;
+    height: 50%;
+}
+
+.info_tarjeta{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.cont_stars{
+    margin-left: 5vw;
+    margin-right: 20px;
+}
+
+.estrellas {
+    width: 50px;
+    background: #5175b5;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.estrellas p {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.estrellas ion-icon{
+    padding-bottom: 10px;
+}
+
+.titulo-text h3, p{
+    margin: 0;
+}
+.titulo-text p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.puntos {
+    color: #3880ff;
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
+.puntos::after{
+    content: "pts";
+    font-size: 10px;
+    position: absolute;
+    padding-left: 3px;
+    font-weight: normal;
+}
+
+.textos_lugar {
+    padding: 0 5%;
+}
+
+.descrip_texto {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.textos_lugar a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.informa {
+    display: -webkit-box;
+    width: 90%;
+    margin: 5%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+}
+
+.informacion {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px grey;
+    height: 85px;
+    padding: 0px 10px;
+    margin: 5% 4% 5% 1%;
+    
+}
+
+.infoIco {
+    font-size: 25px;
+    color:dodgerblue;
+}
+
+.infoTex {
+    font-weight: bold;
+    color: grey;
+}
+
+.maps{
+    width: 45%;
+    box-shadow: 0 0 5px grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imagenes_lugar {
+    width: 100%;
+    overflow: scroll;
+    display: -webkit-box;
+    padding-bottom: 20px;
+}
+
+.img_lc{
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: #8080807d 0 0 5px;
+    margin-left: 20px;
+}
+
+.img_lc:nth-child(1) {
+    margin-left: 5vw;
+}
+
+.img_lugar {
+    max-width: none;
+    height: 100%;
+}

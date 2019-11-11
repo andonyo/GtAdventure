@@ -1,0 +1,136 @@
+.content-card {
+    position: relative;
+}
+
+.head{
+    width: 100%;
+    text-align: center;
+}
+
+.head img{
+    width: 90%;
+}
+
+.img-card {
+    filter: blur(1px);
+}
+
+.text-card {
+    position: absolute;
+    top: calc(50% - 24px);
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.tarjetas{
+    width: 100%;
+    overflow: scroll;
+    display: -webkit-box;
+    padding-bottom: 20px;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 200px;
+    margin-left: 20px;
+    box-shadow: 0 0 5px;
+    margin-top: 5px;
+}
+
+.tarjeta_img {
+    
+    background-size: cover;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pacaya {
+    background-image: url("/assets/img/places/volcanPacaya.jpg");
+}
+
+.fuego {
+    background-image: url("/assets/img/places/fuego.jpg");
+}
+
+.acate {
+    background-image: url("/assets/img/places/acatenango.jpeg");
+}
+
+.filon {
+    background-image: url("/assets/img/places/amati.jpg");
+}
+
+.rostrom {
+    background-image: url("/assets/img/places/rostro.jpg");
+}
+
+.mirandilla {
+    background-image: url("/assets/img/places/mirandilla.jpg");
+}
+
+.puente {
+    background-image: url("/assets/img/places/ixpanpajul.jpg");
+}
+
+.bombil {
+    background-image: url("/assets/img/places/bombil.png");
+}
+
+.caxlampon {
+    background-image: url("/assets/img/places/caxlampon.jpg");
+}
+
+.rinconada {
+    background-image: url("/assets/img/places/Catarata.jpg");
+}
+
+.degradado {
+    background: linear-gradient(0deg, white, transparent);
+    width: 100%;
+    height: 50%;
+}
+
+.cont_stars{
+    width: 25%;
+    margin-left: 5%;
+}
+
+.justi{
+    text-align: justify;
+}
+
+.estrellas {
+    width: 50px;
+    background: #5175b5;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.estrellas p {
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+.estrella_icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.info_tarjeta{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.titulo-text {
+    margin-left: 5%;
+    font-size: 20px;
+}

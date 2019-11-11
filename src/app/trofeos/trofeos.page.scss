@@ -1,0 +1,59 @@
+.todo_trofeos {
+    background: rgb(24, 24, 87);
+    transition: 0.2s;
+}
+
+.content_trofeos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.mTitulo{
+    color: white;
+    text-shadow: 0 0 5px rgb(226, 141, 16);
+}
+
+.caja_trofeos{
+    width: 50vw;
+    height: 50vw;
+    background-image: url("/assets/img/caj.png");
+    background-size: cover;
+    position: relative;
+}
+
+.trofeo {
+    position: absolute;
+    bottom: -3px;
+    width: 150px;
+    left: 15px;
+}
+
+.modal_trofeo {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+    text-align: center;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.modalInterno{
+    width: 75vw;
+    height: 50vh;
+}
+
+.mostrar{
+    transform: scale(1);
+}
+
+.blur {
+    filter: blur(2px);
+}

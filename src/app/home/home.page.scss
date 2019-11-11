@@ -1,0 +1,99 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fondo_Home{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(left, rgb(0, 153, 255), rgba(0, 145, 255, 0.74) 100%);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.nubes{
+    position: absolute;
+    width: 150px;
+}
+
+.a {
+    top: 0;
+    left: 27px;
+}
+
+.b{
+    top: 150px;
+    right: 0px;
+}
+
+.c{
+    width: 200px;
+    bottom: 0;
+    left: 20%;
+}
+
+.vuelo {
+    position: relative;
+    z-index: 5;
+}
+
+.titulo_home{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.descrip_home{
+    color: white;
+    text-align: justify;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.formulario_home{
+    width: 80%;
+    text-align: center;
+}
+
+.input{
+    background: white;
+    border-radius: 20px;
+    padding: 0 15px !important;
+    margin-top: 15px;
+}
+
+.botones_home{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.btn_login{
+    background: #00c853;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 30px;
+    width: 45%;
+    box-shadow: green 0 7px 0px;
+    position: relative;
+    z-index: 5;
+}
+
+.btn_login:active{
+    box-shadow: none;
+}
+
+.btn_cuenta{ 
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+ } 
+
+ .footer_home{
+     background: linear-gradient(left, rgb(0, 153, 255), rgba(0, 145, 255, 0.74) 100%);
+     color: white;
+     text-align: center;
+ }

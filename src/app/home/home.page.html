@@ -1,0 +1,20 @@
+<ion-header>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</ion-header>
+
+<ion-content>
+<div class="fondo_Home">
+  <form class="formulario_home" action="inicio()" method="post">
+      <img class="vuelo" src="/assets/img/vuela.png" alt="" width="200px">
+      <img class="nubes a" src="/assets/img/n1.png" alt="">
+      <img class="nubes b" src="/assets/img/n2.png" alt="">
+      <img class="nubes c" src="/assets/img/n3.png" alt="">
+      <h1 class="titulo_home">Gt Adventure</h1>
+      <p class="descrip_home">¿Estas preparado para vivir muchas aventuras de manera diferente?</p>
+      <firebase-ui (signInSuccessWithAuthResult)="successCallback($event)"></firebase-ui>
+      <div class="botones_home" *ngIf="afAuth.auth.currentUser">
+        <button class="btn_login" (click)="inicio()" type="submit">Ingresar</button>
+      </div>
+  </form>
+</div>
+</ion-content>

@@ -1,0 +1,123 @@
+<ion-header>
+  </ion-header>
+  <div id="cerrar-c" class="todo-coment" (click)="mostrarComentario()">
+  </div>
+  <div id="cerrar-cc" class="todo-coment" (click)="hideShow()">
+  </div>  
+  <div id="comentar" class="datosL">
+    <div class="textosC">
+      <h3>Comentarios</h3>
+      <div class="coment" *ngFor="let item of datos">
+        <div class="comImg">
+          <img src="{{item.imagen}}" alt="">
+        </div>
+        <div class="comTx">
+          <h3 class="nobor">{{item.nombre}}</h3>
+          <p  class="nobor">{{item.texto}}</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="comentUser">
+      <input [(ngModel)]="coment" type="text" placeholder="Ingrese su comentario" required>
+    </div>
+    
+    <div class="imgC">
+      <img (click)="mostrarComentario()" src="/assets/img/libro.png" alt="">
+      <button (click)="comentar()">Comentar</button>
+    </div>
+  </div>
+  
+
+  <div id="modalL" class="datosL">
+    <div class="textosC" *ngIf="mostrar == 1">
+      <h3>{{nombre}}</h3>
+      <p class="mb">{{moreInfo}}</p>
+      <p><b>{{titulo1}}</b><br>{{data1}}</p>
+      <p><b>{{titulo2}}</b><br>{{data2}}</p>
+      <p><b>{{titulo3}}</b><br>{{data3}}</p>
+    </div>
+
+    <div class="textosC" *ngIf="mostrar == 3">
+      <h3>Hoteles</h3>
+      <a class="hotel-cont" href="{{hotellink1}}">
+        <div class="imHot">
+          <img src="{{hotelimg1}}" alt="">
+        </div>
+        <div>
+          <h3 class="nobor">{{hotelname1}}</h3>
+        </div>
+      </a>
+      <a class="hotel-cont" href="{{hotellink2}}">
+        <div class="imHot">
+          <img src="{{hotelimg2}}" alt="">
+        </div>
+        <div>
+          <h3 class="nobor">{{hotelname2}}</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="imgC">
+      <img (click)="hideShow()" src="/assets/img/libro.png" alt="">
+    </div>
+  </div>
+
+  <ion-content id="blurL" class="centro">
+    <div class="imagen {{imagen}}">
+      <ion-icon class="back" (click)="back()" name="arrow-back"></ion-icon>
+      <div class="degradado"></div>
+    </div>
+    <div>
+      <div class="info_tarjeta">
+        <div class="cont_stars">
+          <div class="estrellas">
+            <p>{{estrellas}}</p>
+            <ion-icon class="estrella_icon" name="star"></ion-icon>
+          </div>
+        </div>
+        <div class="titulo-text">
+          <h3>{{nombre}}</h3>
+          <p>{{lugar}}</p>
+          <p class="puntos">{{puntos}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="textos_lugar">
+      <h1>{{nombre}}</h1>
+      <p class="descrip_texto">{{descripcion}}</p>
+    </div>
+    <div class="informa">
+      <div class="informacion" (click)="hideShow(1)">
+          <ion-icon class="infoIco" name="information-circle-outline"></ion-icon>
+          <p class="infoTex">Información</p>
+      </div>
+      <div class="informacion" (click)="mostrarComentario()">
+          <ion-icon class="infoIco" name="contacts"></ion-icon>
+          <p class="infoTex">Comentarios</p>
+      </div>
+      <div class="informacion" (click)="hideShow(3)">
+          <ion-icon class="infoIco" name="bed"></ion-icon>
+          <p class="infoTex">Hoteles</p>
+      </div>
+      <a href="{{link}}">
+        <div class="informacion">
+          <img src="/assets/img/gmaps.png" alt="">
+        </div>
+      </a>
+    </div>
+    <div class="imagenes_lugar">
+      <div class="img_lc">
+        <img class="img_lugar" src="/assets/img/{{imagenes}}/1.jpg" alt="">
+      </div>
+      <div class="img_lc">
+        <img class="img_lugar" src="/assets/img/{{imagenes}}/2.jpg" alt="">
+      </div>
+      <div class="img_lc">
+        <img class="img_lugar" src="/assets/img/{{imagenes}}/3.jpg" alt="">
+      </div>
+      <div style="width: 5vw;"></div>
+    </div>
+  
+  </ion-content>
+  

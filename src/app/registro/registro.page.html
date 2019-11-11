@@ -1,0 +1,31 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <div class="contEscaner">
+    <div style="width:100%">
+        <img class="img-scan" src="/assets/img/montain.png" alt="" width="250px">
+        <div class="glovo">
+            <p>¿porque no nos cuentas un poco más de ti?</p>
+        </div>
+    </div>
+    <div class="conBtn">
+      <input class="input" id="nombre" [(ngModel)]="nombre" type="text" placeholder="Cual es tu nombre">
+      <p>Selecciona una imagen:</p>
+      <div class="avatar">
+        <img id="0" src="/assets/img/avatar/ico0.png" (click)="imagen(0)" alt="">
+        <img id="1" src="/assets/img/avatar/ico1.png" (click)="imagen(1)" alt="">
+        <img id="2" src="/assets/img/avatar/ico2.png" (click)="imagen(2)" alt="">
+        <img id="3" src="/assets/img/avatar/ico3.png" (click)="imagen(3)" alt="">
+        <img id="4" src="/assets/img/avatar/ico4.png" (click)="imagen(4)" alt="">
+        <img id="5" src="/assets/img/avatar/ico5.png" (click)="imagen(5)" alt="">
+        <img id="6" src="/assets/img/avatar/ico6.png" (click)="imagen(6)" alt="">
+        <img id="7" src="/assets/img/avatar/ico7.png" (click)="imagen(7)" alt="">
+        <img id="8" src="/assets/img/avatar/ico8.png" (click)="imagen(8)" alt="">
+        <img id="9" src="/assets/img/avatar/ico9.png" (click)="imagen(9)" alt="">
+        <div style="width: 10vw;"></div>
+      </div>
+      <button class="btn" (click)="guardar()">Aceptar</button>
+    </div>
+  </div>
+</ion-content>

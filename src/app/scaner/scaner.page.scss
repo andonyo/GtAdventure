@@ -1,0 +1,68 @@
+.contEscaner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 56px);
+    background: linear-gradient(left, rgb(0, 153, 255), rgba(0, 145, 255, 0.74) 100%);
+}
+
+.img-scan{
+    position: relative;
+    bottom: -20px;
+    z-index: 5;
+}
+
+.glovo {
+    background: #3880ff;
+    position: absolute;
+    left: 40%;
+    top: -20%;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+}
+
+.glovo::after{
+    content: "";
+    border-left: 27px solid #3880ff;
+    border-top: 0px solid transparent;
+    border-bottom: 31px solid transparent;
+    position: absolute;
+    top: 97%;
+    left: 40%;
+    transform: rotate(5deg);
+}
+
+.mont-cont{
+    position: relative;
+    width: 100%;
+}
+
+.mont{
+    position: absolute;
+    left: -10px;
+    bottom: -1px;
+    max-width: none;
+    width: 105%;
+}
+
+.conBtn{
+    width: 100%;
+    text-align: center;
+    background: #00882d;
+}
+
+.btn{
+    background: #c89800;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 30px;
+    width: 45%;
+    box-shadow: #807300 0 7px 0px;
+    margin: 50px;
+}

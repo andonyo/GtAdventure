@@ -1,0 +1,7 @@
+{
+  "name": "gtAdventure2",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

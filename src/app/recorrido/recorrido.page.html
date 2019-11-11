@@ -1,0 +1,26 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <div class="contEscaner">
+    <div class="opciones">
+        <ion-icon class="opIco" (click)="presentAlertConfirm()" name="arrow-back"></ion-icon>
+        <div class="poCont">
+            <ion-icon class="opIco" name="trophy"></ion-icon>
+            <p>{{puntuacion}}</p>
+        </div>  
+        <ion-icon class="opIco" (click)="presentAlert()" name="information-circle"></ion-icon>
+    </div>
+    <div class="mont-cont">
+        <img class="img-scan" src="/assets/img/explo.png" alt="" width="250px">
+        <img class="mont" src="/assets/img/montains.png" alt="" width="100%">
+        <div class="glovo">
+          <p>{{frase}}</p>
+        </div>
+    </div>
+    <div class="conBtn">
+      <button class="btn" (click)="scanear()">Scanear código</button>
+    </div>
+  </div>
+</ion-content>
+  
